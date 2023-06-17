@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,900&family=Playfair&family=Recursive&family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --pink: #ffc2cc;
+    --green: #3DDC35;
+    --white: #ffff;
+}
+header {
+    color: var(--white);
+    background-color: rgb(12, 12, 63);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+nav {
+    background-color: var(--pink);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    align-items: center; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav h2{
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav .l{
+    color: #35DCC0;
+}
+nav .o{
+    color: #312b06;
+}
+nav .g{
+    color: var(--green);
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+
+}
+ul.dropdown {
+    width: 110px;
+    background-color: var(--green);
+    border-radius: 20px;
+    position: absolute;
+    display: none;
+    /* padding-right: 20px; */
+}
+ul li:hover .dropdown{
+    display: block;
+}
+main {
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+main .content {
+    margin: auto;
+    color: var(--white);
+    font-size: 20px;
+    text-align: justify;
+    width: 500px;
+    column-count: 2;
+    column-gap: 50px;
+    column-rule-width: 3px;
+    column-rule-color: red;
+    column-rule-style: solid;
+}
+.container {
+    background: rgb(29,36,0);
+    background: linear-gradient(90deg, rgba(29,36,0,1) 0%, rgba(110,9,121,1) 0%, rgba(22,153,180,1) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container > .box {
+    height: 200px;
+    width: 300px;
+    margin: 10px 0;
+}
+.box img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    filter: grayscale(1.0);
+    transition: all 2s;
+}
+.box:hover img {
+    filter: none;
+}
+
+.conainter >.box1{
+    height: 200px;
+    width: 400px;
+    margin: 30px auto;
+}
+.box1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 2s;
+
+}
+.box1:hover img {
+    transform: scale(1.5);
+
+}
+
+form{
+    background: rgb(29,36,0);
+    background: linear-gradient(90deg, rgba(29,36,0,1) 0%, rgba(110,9,121,1) 0%, rgba(22,153,180,1) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+form fieldset .fm {
+    background-color: rgba(255, 192, 203,0.5);
+    font-size: 30px;
+    display: block;
+    border-radius: 20px;
+    align-items: center;
+    border: 3px solid black;
+    margin: 30px;
+    padding: 15px;
+    width: 70%;
+}
+fieldset .fm input {
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255,0.5);
+}
+form fieldset .fm textarea {
+    padding-right: 100px;
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    font-size: 20px;
+    background-color: rgba(248, 248, 248, 0.5);
+}
+.btn {
+    color: var(--green);
+    font-size: 30px;
+    border-radius:20px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    text-align: center;
+}
+button1 {
+    color: black;
+    background-color: rgb(187, 187, 231);
+    font-size: 20px;
+    border: none;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: rgb(12, 12, 63);
+    color: var(--white);
+    font-size: 30px;
+    text-align: center;
+}
